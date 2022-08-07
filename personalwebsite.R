@@ -35,8 +35,12 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                              column(9,
                                     p("Pang-Yu Liu is currently a Data Programmer at Cincinnati Children's Hospital Medical Center (CCHMC). He received his MS in statistics from University of Connecticut (UCONN). 
                                He is interested in developing user-friendly web based tools (Rshiny) for users to visualize data effectively and interactively. 
-                               His career goal is to develop innovative statistical methods and combine them with 
-                               rshiny application to create reproducible research and communicate statistical results efficiently and intuitively.")
+                               In his graduate study, he hopes to develop innovative statistical methods and combine them with 
+                               Rshiny application to create reproducible research and communicate statistical results efficiently and intuitively."),
+                                    h6(strong('Phone:'),'860-617-2254'),
+                                    h6(strong('Email:'),a(href="mailto:pang-yu.liu@uconn.edu",'pang-yu.liu@uconn.edu', download=NA, target="_blank",style="color:blue;")),
+                                    # a("Linkedin",href = "https://www.linkedin.com/in/pang-yu-liu-468479129/",style="color:blue;"),
+                                    a(href="pyl_cv.pdf", h6("Download CV"), download=NA, target="_blank",style="color:blue;")
                                     
                                     
                              )),
@@ -66,18 +70,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                              ),
                              column(8)
                            ),
-                           ###===Contact===###
-                           fluidRow(
-                             column(4,
-                                    h2(strong('Contact')),
-                                    h6(strong('Phone:'),'860-617-2254'),
-                                    h6(strong('Email:'),a(href="mailto:pang-yu.liu@uconn.edu",'pang-yu.liu@uconn.edu', download=NA, target="_blank",style="color:blue;")),
-                                    a("Linkedin",href = "https://www.linkedin.com/in/pang-yu-liu-468479129/",style="color:blue;"),
-                                    a(href="pyl_cv.pdf", "Download CV", download=NA, target="_blank",style="color:blue;")
-                             ),
-                             column(8)
-                           )
-                           
+
                            
                            
                   ),
@@ -87,23 +80,39 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                   ##########
                   tabPanel("Projects",
                            fluidRow(h2(strong('Projects')),
-                                    column(8,tags$li(strong('Covid-19-Dashboard-in-US')),
+                                    column(8,tags$li(strong('Covid-19-Dashboard-in-US'),
+                                                     
+                                                     '(',
+                                                     a("Github",href = "https://github.com/liuc3k/Covid-19-Dashboard-in-US",style="color:blue;"),
+                                                     ',',
+                                                     a("Demo Video",href = "https://youtu.be/ITmgK070nMg",style="color:blue;"),
+                                                     ')'),
                                            h6('Introduction: A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.'),
-                                           a("Github",href = "https://github.com/liuc3k/Covid-19-Dashboard-in-US",style="color:blue;"),
-                                           a("Demo Video",href = "https://youtu.be/ITmgK070nMg",style="color:blue;"),
-                                           br(),
-                                           img(src="Covid19_US_Tracking_App.gif", align = "left",height='250px',width='500px')
+                                          
+                                           fluidRow(
+                                             column(8,img(src="Covid19_US_Tracking_App.gif", align = "left",height='250px',width='500px')),
+                                             column(4,img(src="Covid19_US_Tracking_App2.gif", align = "left",height='250px',width='500px'))
+                                           )
+                                           
+                                           
                                     ),
                                     column(4)
                            ),
                            br(),
                            br(),
                            fluidRow(
-                             column(4,tags$li(strong('Redcap2Rshiny')),
-                                    h6('Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.'),
-                                    a("Github",href = "https://github.com/liuc3k/Redcap2Rshiny",style="color:blue;")
+                             column(8,tags$li(strong('Redcap2Rshiny'),
+                                              
+                                              
+                                              '(',
+                                              a("Github",href = "https://github.com/liuc3k/Redcap2Rshiny",style="color:blue;"),
+                                              #',',
+                                              #a("Demo Video",href = "https://youtu.be/ITmgK070nMg",style="color:blue;"),
+                                              ')'),
+                                    h6('Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.')
+                                    #a("Github",href = "https://github.com/liuc3k/Redcap2Rshiny",style="color:blue;")
                              ),
-                             column(8)
+                             column(4)
                            )
                   )
                   
