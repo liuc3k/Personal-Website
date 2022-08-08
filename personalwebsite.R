@@ -15,7 +15,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                   ##########
                   ## Page 1
                   ##########
-                  "Pang-Yu Liu",
+                  "Pang-Yu Liu (Data Programmer)",
                   
                   tabPanel("About Me",
                            tags$style("
@@ -33,13 +33,16 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     img(src='photo.png', align = "left",height='200',width='200')),
                              
                              column(9,
+                                    
                                     p("Pang-Yu Liu is currently a Data Programmer at Cincinnati Children's Hospital Medical Center (CCHMC). He received his MS in statistics from University of Connecticut (UCONN). 
-                               He is interested in developing user-friendly web based tools (Rshiny) for users to visualize data effectively and interactively. 
+                               His work mainly focuses on developing interactive dashboards that provides statistical graphics and other data visualization methods. 
+                               One of his research projects focuses on creating a dashboard that allows users to visualize the Rare Disease Clinical Research Network (RDCRN) dataset from the REDCap system via an API. 
+                               This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc.
                                In his graduate study, he hopes to develop innovative statistical methods and combine them with 
                                Rshiny application to create reproducible research and communicate statistical results efficiently and intuitively."),
                                     h6(strong('Phone:'),'860-617-2254'),
                                     h6(strong('Email:'),a(href="mailto:pang-yu.liu@uconn.edu",'pang-yu.liu@uconn.edu', download=NA, target="_blank",style="color:blue;")),
-                                    # a("Linkedin",href = "https://www.linkedin.com/in/pang-yu-liu-468479129/",style="color:blue;"),
+                                    
                                     a(href="pyl_cv.pdf", h6("Download CV"), download=NA, target="_blank",style="color:blue;")
                                     
                                     
@@ -65,7 +68,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                     h2(strong('Working Experience')),
                                     h6(strong('Data Programmer'),', 2020-present'),
                                     h6("Cincinnati Children's Hospiatal Medical Center, USA"),
-                                    h6(strong('Statistical Programming Intern'),', 2019-2020'),
+                                    h6(strong('Statistical Programming Internship'),', 2019-2020'),
                                     h6("Boehringer Ingelheim, USA")
                              ),
                              column(8)
@@ -106,8 +109,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                                               
                                               '(',
                                               a("Github",href = "https://github.com/liuc3k/Redcap2Rshiny",style="color:blue;"),
-                                              #',',
-                                              #a("Demo Video",href = "https://youtu.be/ITmgK070nMg",style="color:blue;"),
+                                              
                                               ')'),
                                     h6('Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.')
                                     #a("Github",href = "https://github.com/liuc3k/Redcap2Rshiny",style="color:blue;")
