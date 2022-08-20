@@ -70,10 +70,14 @@ Pang-Yu Liu is currently a Data Programmer at [Cincinnati Children's Hospital Me
 
 ### **MonkeyPox-Dashboard-in-US**
 
-* Introduction: 
+* Introduction: The purpose of this R shiny application is going to allow US residents to track monkeypox/orthopoxvirus cases via interactive map and statistical plots. 
 
-* Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US),
-[Demo Video](https://youtu.be/ITmgK070nMg)
+* Sources: [Shiny App](https://jeffliu.shinyapps.io/MonkeyPoxDashboard/#section-dashboard), [Github](https://github.com/liuc3k/MonkeyPox-Dashboard-in-US),
+
+```{r echo=FALSE ,out.width="75%", out.height='50%'}
+knitr::include_graphics(here::here("Monkeypox.png"))
+
+```
 
 ### **Covid-19-Dashboard-in-US**
 
@@ -84,7 +88,7 @@ Pang-Yu Liu is currently a Data Programmer at [Cincinnati Children's Hospital Me
 * Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US),
 [Demo Video](https://youtu.be/ITmgK070nMg)
 
-```{r echo=FALSE}
+```{r echo=FALSE, out.width="75%", out.height='50%'}
 knitr::include_graphics(here::here("Covid19_US_Tracking_App.gif"))
 
 ```
