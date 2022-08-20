@@ -1,0 +1,114 @@
+---
+title: "Pang-Yu Liu (Data Programmer)"
+author: ''
+date: "<h4 style=\"font-style:normal\"><p style=\"color:#1696d2\">`r Sys.Date()`</p></h4><br
+  />"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    css: here::here("web_report.css")
+editor_options:
+  chunk_output_type: console
+runtime: shiny
+resource_files:
+- web_report.css
+- pyl_cv.pdf
+---
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+</style>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" />
+
+```{css echo=FALSE}
+h1 {
+    font-size: 34px;
+    color: #1696d2;
+}
+p {
+    margin: 20px 0 20px;
+}
+```
+
+```{r rmarkdown-setup, echo = FALSE}
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+```
+
+# About Me
+
+```{r echo=FALSE,out.width="25%", out.height='25%'}
+knitr::include_graphics(here::here("photo.png"))
+
+```
+
+ __Biography__
+
+Pang-Yu Liu is currently a Data Programmer at [Cincinnati Children's Hospital Medical Center (CCHMC)](https://www.cincinnatichildrens.org/research/divisions/b/biostatistics) . He received his MS in statistics from [University of Connecticut (UCONN)](https://stat.uconn.edu/) . His work mainly focuses on developing interactive dashboards that provide statistical graphics and other data visualization methods. One of his research projects focuses on creating a dashboard that allows users to visualize the Rare Disease Clinical Research Network (RDCRN) dataset from the REDCap system via an API. This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc. In his graduate study, he hopes to develop innovative statistical methods and combine them with Rshiny applications to create reproducible research and communicate statistical results efficiently and intuitively.
+
+ **Education**
+
+* **M.S. in Statistics** , Department of Statistics, University of Connecticut, USA
+
+* **B.S. in Public Finance**, Department of Public Finance, National Chengchi University, Taiwan
+
+ **Working Experience**
+
+* **Data Programmer** @ Cincinnati Children's Hospiatal Medical Center, USA
+
+
+* **Statistical Programming Internship** @ Boehringer Ingelheim, USA
+
+ 
+
+
+-----
+
+# Projects
+
+### **MonkeyPox-Dashboard-in-US**
+
+* Introduction: 
+
+* Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US),
+[Demo Video](https://youtu.be/ITmgK070nMg)
+
+### **Covid-19-Dashboard-in-US**
+
+
+
+* Introduction: A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.
+
+* Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US),
+[Demo Video](https://youtu.be/ITmgK070nMg)
+
+```{r echo=FALSE}
+knitr::include_graphics(here::here("Covid19_US_Tracking_App.gif"))
+
+```
+
+### **REDCapDivTool** 
+
+* Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.
+
+* Sources:[Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Redcap2Rshiny),
+[Demo Video](https://youtu.be/ITmgK070nMg)
+
+
+
+# Contact
+
+* Email: pang-yu.liu@uconn.edu 
+
+* [Linkedin](https://www.linkedin.com/in/pang-yu-liu-468479129) 
+
+* `r xfun::embed_file(path=here::here("pyl_cv.pdf"),name="CV")`
+
+
+
+
+
+
+
