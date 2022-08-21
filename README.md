@@ -1,2 +1,3 @@
 # Personal-Website
-URL:https://jeffliu.shinyapps.io/PersonalWebsite/
+
+Shiny App: https://jeffliu.shinyapps.io/PersonalWebsite/
