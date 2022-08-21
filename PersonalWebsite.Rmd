@@ -28,7 +28,7 @@ h1 {
     color: #1696d2;
 }
 p {
-    margin: 20px 0 20px;
+    margin: 25px 0 25px;
 }
 ```
 
@@ -46,7 +46,7 @@ knitr::include_graphics(here::here("photo.png"))
 
  __Biography__
 
-Pang-Yu Liu is currently a Data Programmer at [Cincinnati Children's Hospital Medical Center (CCHMC)](https://www.cincinnatichildrens.org/research/divisions/b/biostatistics) . He received his MS in statistics from [University of Connecticut (UCONN)](https://stat.uconn.edu/) . His work mainly focuses on developing interactive dashboards that provide statistical graphics and other data visualization methods. One of his research projects focuses on creating a dashboard that allows users to visualize the Rare Disease Clinical Research Network (RDCRN) dataset from the REDCap system via an API. This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc. In his graduate study, he hopes to develop innovative statistical methods and combine them with Rshiny applications to create reproducible research and communicate statistical results efficiently and intuitively.
+Pang-Yu Liu is currently a Data Programmer at [CCHMC (Cincinnati Children's Hospital Medical Center)](https://www.cincinnatichildrens.org/research/divisions/b/biostatistics) . He received his MS in statistics from [UCONN (University of Connecticut)](https://stat.uconn.edu/) . His work mainly focuses on developing interactive dashboards that provide statistical graphics and other data visualization methods. One of his research projects focuses on creating a dashboard that allows users to visualize the RDCRN (Rare Diseases Clinical Research Network) dataset from the REDCap (Research Electronic Data Capture) system via an API. This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc. In his graduate study, he hopes to develop innovative statistical methods and combine them with Rshiny applications to create reproducible research and communicate statistical results efficiently and intuitively.
 
  **Education**
 
@@ -74,6 +74,8 @@ Pang-Yu Liu is currently a Data Programmer at [Cincinnati Children's Hospital Me
 
 * Sources: [Shiny App](https://jeffliu.shinyapps.io/MonkeyPoxDashboard/#section-dashboard), [Github](https://github.com/liuc3k/MonkeyPox-Dashboard-in-US),
 
+* Develop Date: Aug 2022- Present
+
 ```{r echo=FALSE ,out.width="75%", out.height='50%'}
 knitr::include_graphics(here::here("Monkeypox.png"))
 
@@ -85,6 +87,7 @@ knitr::include_graphics(here::here("Monkeypox.png"))
 
 * Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US)
 
+* Develop Date: Aug 2020- Dec 2020
 
 ```{r echo=FALSE, out.width="75%", out.height='50%'}
 # knitr::include_graphics(here::here("Covid19_US_Tracking_App.gif"))
@@ -93,9 +96,11 @@ knitr::include_graphics(here::here("covid19.png"))
 
 ### **REDCapDivTool** 
 
-* Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.
+* Introduction: A R-shiny application makes researcher easier to summarize RDCRN (Rare Diseases Clinical Research Network) dataset from REDCap (Research Electronic Data Capture) by descriptive tables and several statistical plots via API.
 
 * Sources\*: Since this R-shiny application is developed under Cincinnati Children's Hospital Medical Center (CCHMC), the source code cannot be shared here. 
+
+* Develop Date: May 2021- Dec 2021
 
 ```{r echo=FALSE, out.width="75%", out.height='50%'}
 
@@ -103,7 +108,7 @@ knitr::include_graphics(here::here("scatterplot.png"))
 ```
 
 
-
+-----
 
 # Contact
 
