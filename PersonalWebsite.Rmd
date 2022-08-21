@@ -81,8 +81,6 @@ knitr::include_graphics(here::here("Monkeypox.png"))
 
 ### **Covid-19-Dashboard-in-US**
 
-
-
 * Introduction: A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.
 
 * Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US)
@@ -97,22 +95,37 @@ knitr::include_graphics(here::here("covid19.png"))
 
 * Introduction: A R-shiny application makes researcher easier to summarize Rare Diseases Clinical Research Network (RDCRN) data from REDCap by descriptive tables and several statistical plots via API.
 
-* Sources:[Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Redcap2Rshiny),
-[Demo Video](https://youtu.be/ITmgK070nMg)
+* Sources\*: Since this R-shiny application is developed under Cincinnati Children's Hospital Medical Center (CCHMC), the source code cannot be shared here. 
+
+```{r echo=FALSE, out.width="75%", out.height='50%'}
+
+knitr::include_graphics(here::here("scatterplot.png"))
+```
+
 
 
 
 # Contact
 
-* Email: pang-yu.liu@uconn.edu 
+* 
+```{r echo=FALSE, out.width="75%", out.height='50%'}
+fontawesome::fa(name = "envelope")
+``` 
+pang-yu.liu@uconn.edu
 
-* [Linkedin](https://www.linkedin.com/in/pang-yu-liu-468479129) 
+* 
+```{r echo=FALSE, out.width="75%", out.height='50%'}
+fontawesome::fa(name = "github")
+``` 
+[Github](https://github.com/liuc3k) 
+
+* 
+```{r echo=FALSE, out.width="75%", out.height='50%'}
+fontawesome::fa(name = "linkedin")
+``` 
+[Linkedin](https://www.linkedin.com/in/pang-yu-liu-468479129) 
 
 * `r xfun::embed_file(path=here::here("pyl_cv.pdf"),name="CV")`
-
-
-
-
 
 
 
