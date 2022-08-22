@@ -1,0 +1,24 @@
+<style>
+#more2 {display: none;}
+</style>
+
+<p>Introduction: A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.<span id="dots2">...</span><span id="more2">Need to add more details</span></p>
+<a onclick="myFunction2()" id="myBtn2">(read more)</a>
+
+<script>
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less"; 
+    moreText2.style.display = "inline";
+  }
+}
+</script>
