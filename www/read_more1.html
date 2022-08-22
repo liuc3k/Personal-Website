@@ -1,0 +1,23 @@
+<style>
+#more1 {display: none;}
+</style>
+
+<p>Introduction: The purpose of this R shiny application allows US residents to track monkeypox/orthopoxvirus cases via interactive map and statistical plots.<span id="dots1">...</span><span id="more1">Need to add mnore details</span></p><a onclick="myFunction1()" id="myBtn1">(read more)</a>
+
+<script>
+function myFunction1() {
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("myBtn1");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Read more"; 
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Read less"; 
+    moreText1.style.display = "inline";
+  }
+}
+</script>
