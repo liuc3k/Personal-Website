@@ -2,8 +2,24 @@
 #more2 {display: none;}
 </style>
 
-<p>Introduction: A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.<span id="dots2">...</span><span id="more2">Need to add more details</span></p>
-<a onclick="myFunction2()" id="myBtn2">(read more)</a>
+<p><b><h4>Introduction</h4></b>A R-shiny application for users not only to track Covid-19 cases/deaths in the US map or certain states but also acquire related demographic plots/tables interactively.
+<br /><br />
+<span id="dots2">...</span>
+<span id="more2">
+  <h4><b>Summary </b></h4>
+  * Covid-19-DataViz-in-US is a user-friendly <b>R-shiny</b> application for exploring <b>Covid-19</b> cases/deaths data in the United State (US) via <b>interactive chronograph map</b> and several <b>statistical plots</b>.
+   <br/>
+   <br/>
+  * Allow users to obtain real-time information about Covid-19 confirmed/cumulative cases and deaths by interacting with the chronograph map at <b>state</b> level or at the <b>county</b> level under a specified state.
+   <br/>
+   <br/>
+  * Track the movement of the Covid-19 cases/deaths via <b>time series plots</b> such as <b>line plots</b> and <b>time series bar plots</b>
+   <br/>
+   <br/>
+  * Obtain some ideas regarding <b>demographic characteristics</b> such as race, sex, and age group,etc by using bar charts.
+  </span>
+<a onclick="myFunction2()" id="myBtn2">(read more)</a></p>
+
 
 <script>
 function myFunction2() {
@@ -13,11 +29,11 @@ function myFunction2() {
 
   if (dots2.style.display === "none") {
     dots2.style.display = "inline";
-    btnText2.innerHTML = "Read more"; 
+    btnText2.innerHTML = "read more"; 
     moreText2.style.display = "none";
   } else {
     dots2.style.display = "none";
-    btnText2.innerHTML = "Read less"; 
+    btnText2.innerHTML = "read less"; 
     moreText2.style.display = "inline";
   }
 }
