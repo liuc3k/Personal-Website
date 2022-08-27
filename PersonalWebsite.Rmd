@@ -1,8 +1,8 @@
 ---
 title: "Pang-Yu Liu (Data Programmer)"
 author: ''
-date: "<h4 style=\"font-style:normal\"><p style=\"color:#1696d2\">`r Sys.Date()`</p></h4><br
-  />"
+# date: "<h4 style=\"font-style:normal\"><p style=\"color:#1696d2\">`r Sys.Date()`</p></h4><br
+  # />"
 output:
   html_document:
     toc: yes
@@ -14,21 +14,25 @@ runtime: shiny
 resource_files:
 - web_report.css
 - pyl_cv.pdf
+- read_more1.html
+- read_more2.html
+
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-</style>
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" />
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK&display=swap" rel="stylesheet">
 ```{css echo=FALSE}
 h1 {
     font-size: 34px;
     color: #1696d2;
+    font-family: 'M PLUS Code Latin', sans-serif;
 }
 p {
-    margin: 25px 0 25px;
+    font-size: 19px;
+    margin: 5px 0 5px;
+    font-family: 'Noto Serif HK', serif;
 }
 ```
 
@@ -37,20 +41,22 @@ knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(message = FALSE)
 ```
 
-# About Me
+# About Pang-Yu
 
 ```{r echo=FALSE,out.width="25%", out.height='25%'}
 knitr::include_graphics(here::here("photo.png"))
 
 ```
 
- __Biography__
+ **Biography**
+<!-- <h3><b>Biography</b></h3> -->
 
-Pang-Yu Liu is currently a Data Programmer at [CCHMC (Cincinnati Children's Hospital Medical Center)](https://www.cincinnatichildrens.org/research/divisions/b/biostatistics) . He received his MS in statistics from [UCONN (University of Connecticut)](https://stat.uconn.edu/) . His work mainly focuses on developing interactive dashboards that provide statistical graphics and other data visualization methods. One of his research projects focuses on creating a dashboard that allows users to visualize the RDCRN (Rare Diseases Clinical Research Network) dataset from the REDCap (Research Electronic Data Capture) system via an API. This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc. In his graduate study, he hopes to develop innovative statistical methods and combine them with Rshiny applications to create reproducible research and communicate statistical results efficiently and intuitively.
+<p>Pang-Yu Liu is currently a Data Programmer at <a href="https://www.cincinnatichildrens.org/research/divisions/b/biostatistics">CCHMC (Cincinnati Children's Hospital Medical Center).</a> He received his MS in statistics from <a href="https://stat.uconn.edu/">UCONN (University of Connecticut).</a> His work mainly focuses on developing interactive dashboards that provide statistical graphics and other data visualization methods. One of his research projects focuses on creating a dashboard that allows users to visualize the RDCRN (Rare Diseases Clinical Research Network) dataset from the REDCap (Research Electronic Data Capture) system via an API. This dashboard enables users to understand RDCRN data by using statistical graphics such as box-plots, scatter plots, and swimmer plots, etc. Additionally, he is also interested in developing an interactive dashboard for users without statistical background to understand real world issues efficiently. For example, he created several Chronograph maps for users to visualize Covid-19 information such as confirmed cases, demographic distribution, etc. In his graduate studies, he hopes to develop innovative statistical methods and combine them with R-shiny applications to create reproducible research and communicate statistical results efficiently and intuitively.</p>
+
 
  **Education**
 
-* **M.S. in Statistics** , Department of Statistics, University of Connecticut, USA
+* **M.S. in Statistics**, Department of Statistics, University of Connecticut, USA
 
 * **B.S. in Public Finance**, Department of Public Finance, National Chengchi University, Taiwan
 
@@ -58,88 +64,44 @@ Pang-Yu Liu is currently a Data Programmer at [CCHMC (Cincinnati Children's Hosp
 
 * **Data Programmer** @ Cincinnati Children's Hospiatal Medical Center, USA
 
-
 * **Statistical Programming Internship** @ Boehringer Ingelheim, USA
-
- 
-
 
 -----
 
 # Projects
 
-### **MonkeyPox-Dashboard-in-US**
+### **MonkeyPox-DataViz-in-US (2022)**
 
-```{r echo=FALSE ,out.width="75%", out.height='50%'}
-knitr::include_graphics(here::here("Monkeypox.png"))
-```
+ ```{r echo=FALSE ,out.width="75%", out.height='50%'}
+ knitr::include_graphics(here::here("Monkeypox.png"))
+ ```
 
-```{r read_more1, echo = FALSE}
-shiny::includeHTML("read_more1.html")
-```
+`r shiny::includeHTML("read_more1.html")`
 
-Sources: [Shiny App](https://jeffliu.shinyapps.io/MonkeyPoxDashboard/#section-dashboard), [Github](https://github.com/liuc3k/MonkeyPox-Dashboard-in-US)
+<h4><b>Sources:</b></h4> <p><a href="https://jeffliu.shinyapps.io/MonkeyPoxDashboard/#section-dashboard">Shiny App</a>, <a href="https://github.com/liuc3k/MonkeyPox-Dashboard-in-US">Github</a></p>
 
-Built in Aug 2022
-
-
-
-### **Covid-19-Dashboard-in-US**
+### **Covid-19-DataViz-in-US (2020)**
 
 ```{r echo=FALSE, out.width="75%", out.height='50%'}
 knitr::include_graphics(here::here("covid19.png"))
 ```
 
-```{r read_more2, echo = FALSE}
-shiny::includeHTML("read_more2.html")
-```
 
-Sources: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US)
+`r shiny::includeHTML("read_more2.html")`
 
-Build in Aug 2020
+<!-- **Sources**: [Shiny App](https://jeffliu.shinyapps.io/covid19dashboard/), [Github](https://github.com/liuc3k/Covid-19-Dashboard-in-US) -->
+<h4><b>Sources:</b></h4> <p><a href="https://jeffliu.shinyapps.io/covid19dashboard/">Shiny App</a>, <a href="https://github.com/liuc3k/Covid-19-Dashboard-in-US">Github</a></p>
 
-
-<!---### **REDCapDivTool** 
-
-* Introduction: A R-shiny application makes researcher easier to summarize RDCRN (Rare Diseases Clinical Research Network) dataset from REDCap (Research Electronic Data Capture) by descriptive tables and several statistical plots via API.
-
-* Sources\*: Since this R-shiny application is developed under Cincinnati Children's Hospital Medical Center (CCHMC), the source code cannot be shared here. 
-
-* Develop Date: May 2021- Dec 2021
-
-```{r echo=FALSE, out.width="75%", out.height='50%'}
-
-knitr::include_graphics(here::here("scatterplot.png"))
-```
--->
 
 -----
 
 # Contact
 
-* 
-```{r echo=FALSE, out.width="75%", out.height='50%'}
-fontawesome::fa(name = "envelope")
-``` 
-pang-yu.liu@uconn.edu
+`r fontawesome::fa(name = "envelope")` pang-yu.liu@uconn.edu
+`r fontawesome::fa(name = "github")` [Github](https://github.com/liuc3k) 
+`r fontawesome::fa(name = "linkedin")` [Linkedin](https://www.linkedin.com/in/pang-yu-liu-468479129) 
+`r fontawesome::fa(name = "download")` `r xfun::embed_file(path=here::here("pyl_cv.pdf"),name="CV")`
 
-* 
-```{r echo=FALSE, out.width="75%", out.height='50%'}
-fontawesome::fa(name = "github")
-``` 
-[Github](https://github.com/liuc3k) 
-
-* 
-```{r echo=FALSE, out.width="75%", out.height='50%'}
-fontawesome::fa(name = "linkedin")
-``` 
-[Linkedin](https://www.linkedin.com/in/pang-yu-liu-468479129) 
-
-* 
-```{r echo=FALSE, out.width="75%", out.height='50%'}
-fontawesome::fa(name = "download")
-``` 
-`r xfun::embed_file(path=here::here("pyl_cv.pdf"),name="CV")`
 
 
 
