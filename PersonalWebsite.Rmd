@@ -1,13 +1,13 @@
 ---
 title: "Pang-Yu Liu (Data Programmer)"
 author: ''
-# date: "<h4 style=\"font-style:normal\"><p style=\"color:#1696d2\">`r Sys.Date()`</p></h4><br
-  # />"
 output:
   html_document:
     toc: yes
     toc_float: yes
     css: here::here("web_report.css")
+    includes:
+      in_header: googletracking.html
 editor_options:
   chunk_output_type: console
 runtime: shiny
@@ -16,6 +16,7 @@ resource_files:
 - pyl_cv.pdf
 - read_more1.html
 - read_more2.html
+
 
 ---
 
